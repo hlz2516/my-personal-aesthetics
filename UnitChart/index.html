@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #app {
+        height: 100vh;
+      }
+
+      .unit-chart-container {
+        --width: 200px;
+        --height: 150px;
+        display: inline-block;
+        width: var(--width);
+        height: var(--height);
+        padding: 8px;
+        border: 1px solid black;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+
+      .units-layout {
+        height: 100%;
+        box-sizing: border-box;
+        min-width: 60px;
+        display: grid;
+        grid-auto-flow:column;
+        grid-template-columns: repeat(auto-fit,20px);
+        grid-template-rows: repeat(auto-fit, 20px);
+        grid-auto-rows: 20px;
+        grid-auto-columns: 20px;
+        column-gap: 4px;
+        row-gap: 4px;
+        align-content: center;
+      }
+
+      .units-layout>div{
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="unit-chart-container">
+        <div class="units-layout">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> 
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import { createApp } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
+      createApp({
+        data() {
+          return {
+            message: "Hello Vue!",
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
